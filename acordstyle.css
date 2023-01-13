@@ -1,0 +1,85 @@
+      /*
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+      */
+
+      /* 
+      MAIN COLOR: #087f5b
+      GREY COLOR: #343a40
+      */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* ------------------------ */
+      /* GENERAL STYLES */
+      /* ------------------------ */
+      body {
+        font-family: 'Inter', sans-serif;
+        color: #343a40;
+      }
+
+      .accordion {
+        width: 700px;
+        margin: 100px auto;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+      
+      .numero, .texto{
+        font-size: 24px;
+        font-weight: 500; 
+
+      }
+      .numero{
+        color: #ced4da;
+      }
+      .aberto .numero{
+        color: green;
+      }
+      .aberto .texto{
+        color: green;
+      }
+      .aberto{
+        border-top: 4px solid green;
+      }
+      .aberto .caixa-escondida{
+        display: block;
+      }
+      .caixa-escondida{
+        grid-column: 2;
+        display: none;
+        
+      }
+     
+      .caixa-escondida p{
+          line-height: 1.6;
+          margin-bottom: 24px;
+      }
+      .caixa-escondida ul{
+        margin-left: 16px;
+      }
+      .icon{
+        width: 25px;
+        height: 25px;
+        stroke: green;
+      }
+      .item{
+        box-shadow: 0 0 32px rgb(0, 0, 0, 0.1);
+        display: grid;
+        padding: 24px;
+        grid-template-columns: auto 1fr auto;
+        column-gap: 24px;
+        row-gap: 32px;
+        align-items: center;
+        
+      }
+
+      
